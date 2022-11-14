@@ -20,7 +20,7 @@ jobs:
       MONGODB_USERNAME: root # ${{ secrets.MONGODB_USERNAME }} # only with external mongo
       MONGODB_PASSWORD: example # ${{ secrets.MONGODB_PASSWORD }} # only with external mongo
       PORT: 8080
-    services:
+    services: # this is for setting up of the container services running within hosting container
       mongodb:
         image: mongo
         env:
